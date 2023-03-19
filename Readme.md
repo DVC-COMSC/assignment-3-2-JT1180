@@ -6,3 +6,27 @@
 -->
 
 ## Complete the "main.py"
+
+Explanation
+  The program examines the email used for input and is read to find whether or not it is 'True' or 'False' by examining if it has @ or .
+
+Code
+  email = input('Enter your email: ')
+  
+    if(email[0].isalpha()):
+        if(len(email) > 5 and len(email) < 30):
+            if(email.find('@')):
+                if('.' in email):
+                    print('True')
+                else:
+                    print('False')
+            else:
+                print('False')
+        else:
+            print('False')
+    else:
+        print('False')
+    pass
+
+Output
+  Whether or not the email is 'True' or 'False' is displayed here
